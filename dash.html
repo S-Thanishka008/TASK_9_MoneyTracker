@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAULTO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="side">
+        <div>
+            <div class="logo">VAULTO</div>
+            <div class="desc">TRACK | SAVE | GROW</div>
+            <ul class="navi">
+                <li><a href="dash.html" class="link active">DASHBOARD</a></li>
+                <li><a href="tran.html" class="link">TRANSACTIONS</a></li>
+                <li><a href="bud.html" class="link">BUDGET</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <header>
+            <div>
+                <h1 id="user">Good Morning !</h1>
+                <p>Track your "Expenses" easily</p>
+            </div>
+            <div id="day" class="day"></div>
+        </header>
+        <div class="row1">
+            <div class="card">
+                <div class="tag">Total Spent</div>
+                <div class="val" id="sum">₹0.00</div>
+            </div>
+            <div class="card">
+                <div class="tag">Remaining</div>
+                <div class="val" id="rem">₹0.00</div>
+            </div>
+            <div class="card">
+                <div class="tag">Highest expense</div>
+                <div class="val" id="max">₹0.00</div>
+            </div>
+        </div>
+        <div id="warn" class="warn none">❗Warning : Over monthly budget❗</div>
+        <div class="row2">
+            <div class="card">
+                <h3>Add Expense</h3>
+                <form id="add">
+                    <div class="row">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Item Name" required>
+                    </div>
+                    <div class="row">
+                        <label for="amt">Amount (₹)</label>
+                        <input type="number" id="amt" min="1" step="any" placeholder="Amount" required>
+                    </div>
+                    <div class="row">
+                        <label for="cat">Category</label>
+                        <select id="cat" required>
+                            <option value="" disabled selected>Select</option>
+                            <option value="Food">Food</option>
+                            <option value="Travel">Travel</option>
+                            <option value="Shopping">Shopping</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label for="dt">Date</label>
+                        <input type="date" id="dt" required>
+                    </div>
+                    <div id="err" class="err none"></div>
+                    <button type="submit" class="btn all">Add</button>
+                </form>
+            </div>
+            <div class="card">
+                <h3>Categories</h3>
+                <div id="cats" class="catebox"></div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

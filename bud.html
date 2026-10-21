@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAULTO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="side">
+        <div>
+            <div class="logo">VAULTO</div>
+            <div class="desc">TRACK | SAVE | GROW</div>
+            <ul class="navi">
+                <li><a href="dash.html" class="link">DASHBOARD</a></li>
+                <li><a href="tran.html" class="link">TRANSACTIONS</a></li>
+                <li><a href="bud.html" class="link active">BUDGET</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <header>
+            <div>
+                <h1 id="user">Good Morning !</h1>
+                <p>Track your "Expenses" easily</p>
+            </div>
+            <div id="day" class="day"></div>
+        </header>
+        <div class="row1">
+            <div class="card">
+                <div class="tag">Total Spent</div>
+                <div class="val" id="sum">₹0.00</div>
+            </div>
+            <div class="card">
+                <div class="tag">Remaining</div>
+                <div class="val" id="rem">₹0.00</div>
+            </div>
+            <div class="card">
+                <div class="tag">Highest expense</div>
+                <div class="val" id="max">₹0.00</div>
+            </div>
+        </div>
+        <div id="warn" class="warn none">❗Warning : Over monthly budget❗</div>
+        <div class="card">
+            <h3>SET BUDGET</h3>
+            <form id="form">
+                <div class="row">
+                    <label for="set">Monthly limit</label>
+                    <div class="box">
+                        <input type="number" id="set" placeholder="e.x. 15000" min="1" step="any" required>
+                        <button type="submit" class="btn">SAVE</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
