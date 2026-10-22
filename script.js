@@ -122,7 +122,7 @@ function calc(){
     if (elSum) elSum.textContent = `₹${sum.toFixed(2)}`;
     if (elRem){
         elRem.textContent=`₹${rem.toFixed(2)}`;
-        elRem.style.color=(cap>0 && rem <0) ? '#dc2626' : '#020a70';
+        elRem.style.color=(cap>0 && rem <0) ? '#dc2626' : '#8b91f4';
     }
     if (elWarn){
         if (cap  >0 && rem<0) elWarn.classList.remove('none');
