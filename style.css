@@ -41,14 +41,14 @@ body{
     box-shadow:10px 0 35px rgba(0, 0, 0, 0.5);
 }
 .logo{
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
     letter-spacing: 2px;
     color:#f5f0fc;
     letter-spacing: 0.5px;
 }
 .desc{
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 700;
     color:#ff6b3d;
     letter-spacing: 2px;
@@ -65,7 +65,7 @@ body{
     align-items: center;
     padding: 14px 20px;
     color:#a69bb8;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 700;
     letter-spacing: 0.5px;
     border-radius:10px;
@@ -108,12 +108,13 @@ header{
     margin-bottom: 20px;
 }
 header h1{
-    font-size: 1.8rem;
+    font-size: 2rem;
     color:#a69bb8;
 }
 header p{
     color: #a69bb8;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    font-weight: 600;
     margin-top: 5px;
 }
 .day{
@@ -122,7 +123,7 @@ header p{
     padding: 10px 20px;
     backdrop-filter: blur(8px);
     border-radius: 20px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color:#ffa133;
     font-weight: 700;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
@@ -161,10 +162,10 @@ header p{
 .card h3{
     color:#463466;
     margin-bottom: 10px;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 .card .tag{
-    font-size: 0.7rem;
+    font-size: 1rem;
     color:#a69bb8;
     text-transform: uppercase;
     font-weight: 700;
